@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Net Log</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="index.js"></script>
+</head>
+<body style="background: white;">
+    <header>
+        <h1>Net Log</h1>
+        <strong>Net Control Call:</strong><input type="text" id="net-ctl-call" data-prop="netControlCall" class="net-data all-caps"><br />
+        <strong>Net Control Name:</strong><input type="text" id="net-ctl-name" data-prop="netControlName" class="net-data"><br />
+        <label for="date-time">Date/Time: </label><input type="datetime-local" name="date-time" id="date-time" data-prop="date" class="net-data"><br />
+        <label for="puzzler">Puzzler:</label><br />
+        <textarea name="puzzler" id="puzzler" cols="30" rows="10" placeholder="The puzzler question is..." data-prop="puzzler" class="net-data"></textarea><br />
+        <label for="answer">Answer:</label><select data-prop="answer" name="answer" id="answer" class="net-data"><option value="">-</option><option value="a">A</option><option value="b">B</option><option value="c">C</option><option value="d">D</option></select>
+    </header>
+    <hr />
+    <main>
+        <table id="log-table">
+            <colgroup>
+                <col class="index-col">
+                <col class="call-col">
+                <col class="name-col">
+                <col class="qth-col">
+                <col class="answer-col">
+                <col class="notes-col">
+            </colgroup>
+            <thead>
+                <th>Index</th>
+                <th>Call</th>
+                <th>Name</th>
+                <th>QTH</th>
+                <th>Puzzler</th>
+                <th>Notes</th>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <td id="index-input-cell"><input class="input-field" type="number" id="index-input" readonly></td>
+                <td id="call-input-cell"><input class="input-field all-caps net-entry-input" type="text" id="call-input" pattern="[A-Za-z0-9]{3,10}" required></td>
+                <td id="name-input-cell"><input class="input-field net-entry-input" type="text" id="name-input"></td>
+                <td id="qth-input-cell"><input class="input-field net-entry-input" type="text" id="qth-input"></td>
+                <td id="answer-input-cell">Puzzler</td>
+                <td id="notes-input-cell"><input type="button" value="Add" id="add-button"></td>
+            </tfoot>
+        </table>
+        <div id="notification-area"></div>
+    </main>
+    <div>Font Size: <input type="number" id="base-font-size" min="8" max="200"></div>
+    <div><input type="button" id="export-button" value="Export"></div>
+    <!-- <a href="https://www.qrz.com/">QRZ</a> -->
+</body>
+</html>

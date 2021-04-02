@@ -1,0 +1,91 @@
+body {
+    font-size:16px;
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+}
+thead,tfoot {
+    border-style: solid;
+    border-width: 3px;
+}
+
+th,td {
+    border-width: 1px;
+    border-style: solid;
+}
+.index-col {
+    width: 6ch;
+}
+.net-entry-index{
+    width: 6ch;
+}
+
+.call-col {
+    width: 10ch;
+}
+
+.name-col {
+    width: 20ch;
+}
+
+.qth-col {
+    width: 20ch;
+}
+
+.answer-col {
+    width: 6ch;
+}
+
+.notes-area {
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.input-field {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.notification-success{
+    color: darkgreen;
+}
+.notification-error{
+    color: red;
+    font-weight: bolder;
+}
+
+/* #add-button {
+    font-size: 1em;
+} */
+
+input,textarea {
+    font-size: .75em;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+/* [data-prop="call"]{
+    color: brown;
+} */
+
+/* .notes-col {
+    width: 30ch;
+} */
+
+/* .narrowField {
+    width: 90px;
+} */
+/* .mediumField {
+    width: 180px;
+} */
+/* .wideField {
+    width: 260px;
+} */
