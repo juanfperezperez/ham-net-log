@@ -1,5 +1,5 @@
 {
-  "name": "ham-log",
+  "name": "net-log",
   "version": "0.1.0",
   "description": "This is the first attempt at a HTML based radio log. I'm a beginner at all aspects of this, so let's go.",
   "main": "main.js",
