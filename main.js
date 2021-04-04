@@ -43,18 +43,18 @@ function createWindow () {
         }
       ]
     },
-    {
-      label:"Window",
-      submenu: [
-        {
-          label: "Open Dev Tools",
-          click(){
-            mainWindow.webContents.openDevTools()
-          },
-          accelerator: "CmdOrCtrl+Shift+I"
-        }
-      ]
-    }
+    // {
+    //   label:"Window",
+    //   submenu: [
+    //     {
+    //       label: "Open Dev Tools",
+    //       click(){
+    //         mainWindow.webContents.openDevTools()
+    //       },
+    //       accelerator: "CmdOrCtrl+Shift+I"
+    //     }
+    //   ]
+    // }
   ])
   Menu.setApplicationMenu(menu)
 
